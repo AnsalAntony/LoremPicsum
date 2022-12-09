@@ -1,0 +1,837 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D3EDA302855B3CD007DF11E /* PicsumImageDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3EDA2F2855B3CD007DF11E /* PicsumImageDetailViewModel.swift */; };
+		4D4A1C052854F3D100C4CF12 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4A1C042854F3D100C4CF12 /* NetworkManager.swift */; };
+		4D4A1C0A2854F5BF00C4CF12 /* ImageListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4A1C092854F5BF00C4CF12 /* ImageListModel.swift */; };
+		4D4A1C1228551AB600C4CF12 /* PicsumImageListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4A1C1128551AB500C4CF12 /* PicsumImageListViewModel.swift */; };
+		4D70B54A285494F300778C61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D70B549285494F300778C61 /* AppDelegate.swift */; };
+		4D70B54C285494F300778C61 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D70B54B285494F300778C61 /* SceneDelegate.swift */; };
+		4D70B551285494F300778C61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D70B54F285494F300778C61 /* Main.storyboard */; };
+		4D70B554285494F300778C61 /* LoremPicsum.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4D70B552285494F300778C61 /* LoremPicsum.xcdatamodeld */; };
+		4D70B556285494F400778C61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D70B555285494F400778C61 /* Assets.xcassets */; };
+		4D70B559285494F400778C61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D70B557285494F400778C61 /* LaunchScreen.storyboard */; };
+		4D70B564285494F500778C61 /* LoremPicsumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D70B563285494F500778C61 /* LoremPicsumTests.swift */; };
+		4D70B56F285494F500778C61 /* LoremPicsumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D70B56E285494F500778C61 /* LoremPicsumUITests.swift */; };
+		4D70B59D285498A900778C61 /* PicsumImageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D70B59C285498A900778C61 /* PicsumImageListViewController.swift */; };
+		4D70B5A2285498F900778C61 /* PicsumImageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D70B5A1285498F900778C61 /* PicsumImageDetailViewController.swift */; };
+		4D70B5AB28549E7D00778C61 /* PicsumImageListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D70B5A928549E7D00778C61 /* PicsumImageListCollectionViewCell.swift */; };
+		4D70B5AC28549E7D00778C61 /* PicsumImageListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D70B5AA28549E7D00778C61 /* PicsumImageListCollectionViewCell.xib */; };
+		4D70B5B22854AC9400778C61 /* ProgressiveLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D70B5B02854AC9300778C61 /* ProgressiveLoader.swift */; };
+		4D70B5B32854AC9400778C61 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D70B5B12854AC9400778C61 /* Extension.swift */; };
+		4D9F88C62854B83600F1E5A0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9F88C42854B83500F1E5A0 /* Constants.swift */; };
+		4D9F88C72854B83600F1E5A0 /* ConstantsLocaleKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9F88C52854B83600F1E5A0 /* ConstantsLocaleKeys.swift */; };
+		4D9F88D32854DFA100F1E5A0 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9F88D22854DFA000F1E5A0 /* ApiClient.swift */; };
+		4D9F88D82854E04400F1E5A0 /* ServiceUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9F88D72854E04400F1E5A0 /* ServiceUrl.swift */; };
+		6E42790AFD03DA91C844793B /* Pods_LoremPicsum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BBDC8BABD26F4D977B7299A /* Pods_LoremPicsum.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4D70B560285494F500778C61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D70B53E285494F300778C61 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D70B545285494F300778C61;
+			remoteInfo = LoremPicsum;
+		};
+		4D70B56B285494F500778C61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D70B53E285494F300778C61 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D70B545285494F300778C61;
+			remoteInfo = LoremPicsum;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3BBDC8BABD26F4D977B7299A /* Pods_LoremPicsum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoremPicsum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D3EDA2F2855B3CD007DF11E /* PicsumImageDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicsumImageDetailViewModel.swift; sourceTree = "<group>"; };
+		4D4A1C042854F3D100C4CF12 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		4D4A1C092854F5BF00C4CF12 /* ImageListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListModel.swift; sourceTree = "<group>"; };
+		4D4A1C1128551AB500C4CF12 /* PicsumImageListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicsumImageListViewModel.swift; sourceTree = "<group>"; };
+		4D70B546285494F300778C61 /* LoremPicsum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoremPicsum.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D70B549285494F300778C61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4D70B54B285494F300778C61 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4D70B550285494F300778C61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4D70B553285494F300778C61 /* LoremPicsum.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LoremPicsum.xcdatamodel; sourceTree = "<group>"; };
+		4D70B555285494F400778C61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4D70B558285494F400778C61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4D70B55A285494F400778C61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D70B55F285494F500778C61 /* LoremPicsumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoremPicsumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D70B563285494F500778C61 /* LoremPicsumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoremPicsumTests.swift; sourceTree = "<group>"; };
+		4D70B565285494F500778C61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D70B56A285494F500778C61 /* LoremPicsumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoremPicsumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D70B56E285494F500778C61 /* LoremPicsumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoremPicsumUITests.swift; sourceTree = "<group>"; };
+		4D70B570285494F500778C61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D70B59C285498A900778C61 /* PicsumImageListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicsumImageListViewController.swift; sourceTree = "<group>"; };
+		4D70B5A1285498F900778C61 /* PicsumImageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicsumImageDetailViewController.swift; sourceTree = "<group>"; };
+		4D70B5A928549E7D00778C61 /* PicsumImageListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicsumImageListCollectionViewCell.swift; sourceTree = "<group>"; };
+		4D70B5AA28549E7D00778C61 /* PicsumImageListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PicsumImageListCollectionViewCell.xib; sourceTree = "<group>"; };
+		4D70B5B02854AC9300778C61 /* ProgressiveLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressiveLoader.swift; sourceTree = "<group>"; };
+		4D70B5B12854AC9400778C61 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		4D9F88C42854B83500F1E5A0 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4D9F88C52854B83600F1E5A0 /* ConstantsLocaleKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstantsLocaleKeys.swift; sourceTree = "<group>"; };
+		4D9F88D22854DFA000F1E5A0 /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		4D9F88D72854E04400F1E5A0 /* ServiceUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceUrl.swift; sourceTree = "<group>"; };
+		7EF478A35F197F15C8A350CD /* Pods-LoremPicsum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoremPicsum.release.xcconfig"; path = "Target Support Files/Pods-LoremPicsum/Pods-LoremPicsum.release.xcconfig"; sourceTree = "<group>"; };
+		FEF5BCD9E01B5D3B898AE6C5 /* Pods-LoremPicsum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoremPicsum.debug.xcconfig"; path = "Target Support Files/Pods-LoremPicsum/Pods-LoremPicsum.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D70B543285494F300778C61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E42790AFD03DA91C844793B /* Pods_LoremPicsum.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D70B55C285494F500778C61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D70B567285494F500778C61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B500558103D94B3ECB2FA04 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BBDC8BABD26F4D977B7299A /* Pods_LoremPicsum.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4D70B53D285494F300778C61 = {
+			isa = PBXGroup;
+			children = (
+				4D70B548285494F300778C61 /* LoremPicsum */,
+				4D70B562285494F500778C61 /* LoremPicsumTests */,
+				4D70B56D285494F500778C61 /* LoremPicsumUITests */,
+				4D70B547285494F300778C61 /* Products */,
+				C7FDD0174086A5AC782DF773 /* Pods */,
+				4B500558103D94B3ECB2FA04 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4D70B547285494F300778C61 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4D70B546285494F300778C61 /* LoremPicsum.app */,
+				4D70B55F285494F500778C61 /* LoremPicsumTests.xctest */,
+				4D70B56A285494F500778C61 /* LoremPicsumUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4D70B548285494F300778C61 /* LoremPicsum */ = {
+			isa = PBXGroup;
+			children = (
+				4D70B590285496BF00778C61 /* Model */,
+				4D70B592285496E700778C61 /* ViewModels */,
+				4D70B591285496D200778C61 /* Controllers */,
+				4D70B5942854970100778C61 /* CustomCells */,
+				4D70B5952854970E00778C61 /* Storyboards */,
+				4D70B593285496F300778C61 /* Network */,
+				4D70B58E2854969F00778C61 /* Utility */,
+				4D70B5962854972600778C61 /* Fonts */,
+				4D70B5B72854AD0000778C61 /* Constants */,
+				4D70B598285497AB00778C61 /* Common */,
+				4D70B555285494F400778C61 /* Assets.xcassets */,
+				4D70B55A285494F400778C61 /* Info.plist */,
+				4D70B552285494F300778C61 /* LoremPicsum.xcdatamodeld */,
+			);
+			path = LoremPicsum;
+			sourceTree = "<group>";
+		};
+		4D70B562285494F500778C61 /* LoremPicsumTests */ = {
+			isa = PBXGroup;
+			children = (
+				4D70B563285494F500778C61 /* LoremPicsumTests.swift */,
+				4D70B565285494F500778C61 /* Info.plist */,
+			);
+			path = LoremPicsumTests;
+			sourceTree = "<group>";
+		};
+		4D70B56D285494F500778C61 /* LoremPicsumUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4D70B56E285494F500778C61 /* LoremPicsumUITests.swift */,
+				4D70B570285494F500778C61 /* Info.plist */,
+			);
+			path = LoremPicsumUITests;
+			sourceTree = "<group>";
+		};
+		4D70B58E2854969F00778C61 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				4D70B5B12854AC9400778C61 /* Extension.swift */,
+				4D70B5B02854AC9300778C61 /* ProgressiveLoader.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		4D70B590285496BF00778C61 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4D4A1C092854F5BF00C4CF12 /* ImageListModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4D70B591285496D200778C61 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4D70B5A628549DFE00778C61 /* PicsumImageList */,
+				4D70B5A728549E1700778C61 /* PicsumImageDetail */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4D70B592285496E700778C61 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4D4A1C1128551AB500C4CF12 /* PicsumImageListViewModel.swift */,
+				4D3EDA2F2855B3CD007DF11E /* PicsumImageDetailViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4D70B593285496F300778C61 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4D4A1C042854F3D100C4CF12 /* NetworkManager.swift */,
+				4D9F88D22854DFA000F1E5A0 /* ApiClient.swift */,
+				4D9F88D72854E04400F1E5A0 /* ServiceUrl.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4D70B5942854970100778C61 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				4D70B5A828549E3800778C61 /* PicsumImageListCell */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		4D70B5952854970E00778C61 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				4D70B557285494F400778C61 /* LaunchScreen.storyboard */,
+				4D70B54F285494F300778C61 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		4D70B5962854972600778C61 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		4D70B598285497AB00778C61 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4D70B549285494F300778C61 /* AppDelegate.swift */,
+				4D70B54B285494F300778C61 /* SceneDelegate.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		4D70B5A628549DFE00778C61 /* PicsumImageList */ = {
+			isa = PBXGroup;
+			children = (
+				4D70B59C285498A900778C61 /* PicsumImageListViewController.swift */,
+			);
+			path = PicsumImageList;
+			sourceTree = "<group>";
+		};
+		4D70B5A728549E1700778C61 /* PicsumImageDetail */ = {
+			isa = PBXGroup;
+			children = (
+				4D70B5A1285498F900778C61 /* PicsumImageDetailViewController.swift */,
+			);
+			path = PicsumImageDetail;
+			sourceTree = "<group>";
+		};
+		4D70B5A828549E3800778C61 /* PicsumImageListCell */ = {
+			isa = PBXGroup;
+			children = (
+				4D70B5A928549E7D00778C61 /* PicsumImageListCollectionViewCell.swift */,
+				4D70B5AA28549E7D00778C61 /* PicsumImageListCollectionViewCell.xib */,
+			);
+			path = PicsumImageListCell;
+			sourceTree = "<group>";
+		};
+		4D70B5B72854AD0000778C61 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				4D9F88C42854B83500F1E5A0 /* Constants.swift */,
+				4D9F88C52854B83600F1E5A0 /* ConstantsLocaleKeys.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		C7FDD0174086A5AC782DF773 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FEF5BCD9E01B5D3B898AE6C5 /* Pods-LoremPicsum.debug.xcconfig */,
+				7EF478A35F197F15C8A350CD /* Pods-LoremPicsum.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4D70B545285494F300778C61 /* LoremPicsum */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D70B573285494F500778C61 /* Build configuration list for PBXNativeTarget "LoremPicsum" */;
+			buildPhases = (
+				8479E6DB28B57702E9A155CE /* [CP] Check Pods Manifest.lock */,
+				4D70B542285494F300778C61 /* Sources */,
+				4D70B543285494F300778C61 /* Frameworks */,
+				4D70B544285494F300778C61 /* Resources */,
+				4D51A7863CB681636FDD83C7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LoremPicsum;
+			productName = LoremPicsum;
+			productReference = 4D70B546285494F300778C61 /* LoremPicsum.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4D70B55E285494F500778C61 /* LoremPicsumTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D70B576285494F500778C61 /* Build configuration list for PBXNativeTarget "LoremPicsumTests" */;
+			buildPhases = (
+				4D70B55B285494F500778C61 /* Sources */,
+				4D70B55C285494F500778C61 /* Frameworks */,
+				4D70B55D285494F500778C61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D70B561285494F500778C61 /* PBXTargetDependency */,
+			);
+			name = LoremPicsumTests;
+			productName = LoremPicsumTests;
+			productReference = 4D70B55F285494F500778C61 /* LoremPicsumTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4D70B569285494F500778C61 /* LoremPicsumUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D70B579285494F500778C61 /* Build configuration list for PBXNativeTarget "LoremPicsumUITests" */;
+			buildPhases = (
+				4D70B566285494F500778C61 /* Sources */,
+				4D70B567285494F500778C61 /* Frameworks */,
+				4D70B568285494F500778C61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D70B56C285494F500778C61 /* PBXTargetDependency */,
+			);
+			name = LoremPicsumUITests;
+			productName = LoremPicsumUITests;
+			productReference = 4D70B56A285494F500778C61 /* LoremPicsumUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4D70B53E285494F300778C61 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					4D70B545285494F300778C61 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					4D70B55E285494F500778C61 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 4D70B545285494F300778C61;
+					};
+					4D70B569285494F500778C61 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 4D70B545285494F300778C61;
+					};
+				};
+			};
+			buildConfigurationList = 4D70B541285494F300778C61 /* Build configuration list for PBXProject "LoremPicsum" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4D70B53D285494F300778C61;
+			productRefGroup = 4D70B547285494F300778C61 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4D70B545285494F300778C61 /* LoremPicsum */,
+				4D70B55E285494F500778C61 /* LoremPicsumTests */,
+				4D70B569285494F500778C61 /* LoremPicsumUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4D70B544285494F300778C61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D70B559285494F400778C61 /* LaunchScreen.storyboard in Resources */,
+				4D70B5AC28549E7D00778C61 /* PicsumImageListCollectionViewCell.xib in Resources */,
+				4D70B556285494F400778C61 /* Assets.xcassets in Resources */,
+				4D70B551285494F300778C61 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D70B55D285494F500778C61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D70B568285494F500778C61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4D51A7863CB681636FDD83C7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoremPicsum/Pods-LoremPicsum-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoremPicsum/Pods-LoremPicsum-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LoremPicsum/Pods-LoremPicsum-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8479E6DB28B57702E9A155CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoremPicsum-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D70B542285494F300778C61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D9F88D32854DFA100F1E5A0 /* ApiClient.swift in Sources */,
+				4D70B554285494F300778C61 /* LoremPicsum.xcdatamodeld in Sources */,
+				4D70B59D285498A900778C61 /* PicsumImageListViewController.swift in Sources */,
+				4D4A1C052854F3D100C4CF12 /* NetworkManager.swift in Sources */,
+				4D9F88D82854E04400F1E5A0 /* ServiceUrl.swift in Sources */,
+				4D70B5A2285498F900778C61 /* PicsumImageDetailViewController.swift in Sources */,
+				4D70B54A285494F300778C61 /* AppDelegate.swift in Sources */,
+				4D70B54C285494F300778C61 /* SceneDelegate.swift in Sources */,
+				4D70B5B22854AC9400778C61 /* ProgressiveLoader.swift in Sources */,
+				4D70B5AB28549E7D00778C61 /* PicsumImageListCollectionViewCell.swift in Sources */,
+				4D70B5B32854AC9400778C61 /* Extension.swift in Sources */,
+				4D4A1C1228551AB600C4CF12 /* PicsumImageListViewModel.swift in Sources */,
+				4D3EDA302855B3CD007DF11E /* PicsumImageDetailViewModel.swift in Sources */,
+				4D4A1C0A2854F5BF00C4CF12 /* ImageListModel.swift in Sources */,
+				4D9F88C62854B83600F1E5A0 /* Constants.swift in Sources */,
+				4D9F88C72854B83600F1E5A0 /* ConstantsLocaleKeys.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D70B55B285494F500778C61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D70B564285494F500778C61 /* LoremPicsumTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D70B566285494F500778C61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D70B56F285494F500778C61 /* LoremPicsumUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4D70B561285494F500778C61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D70B545285494F300778C61 /* LoremPicsum */;
+			targetProxy = 4D70B560285494F500778C61 /* PBXContainerItemProxy */;
+		};
+		4D70B56C285494F500778C61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D70B545285494F300778C61 /* LoremPicsum */;
+			targetProxy = 4D70B56B285494F500778C61 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4D70B54F285494F300778C61 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D70B550285494F300778C61 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4D70B557285494F400778C61 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D70B558285494F400778C61 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4D70B571285494F500778C61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4D70B572285494F500778C61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4D70B574285494F500778C61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEF5BCD9E01B5D3B898AE6C5 /* Pods-LoremPicsum.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LoremPicsum/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Ansal.LoremPicsum;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		4D70B575285494F500778C61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EF478A35F197F15C8A350CD /* Pods-LoremPicsum.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LoremPicsum/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Ansal.LoremPicsum;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		4D70B577285494F500778C61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LoremPicsumTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Ansal.LoremPicsumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoremPicsum.app/LoremPicsum";
+			};
+			name = Debug;
+		};
+		4D70B578285494F500778C61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LoremPicsumTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Ansal.LoremPicsumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoremPicsum.app/LoremPicsum";
+			};
+			name = Release;
+		};
+		4D70B57A285494F500778C61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LoremPicsumUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Ansal.LoremPicsumUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LoremPicsum;
+			};
+			name = Debug;
+		};
+		4D70B57B285494F500778C61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LoremPicsumUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Ansal.LoremPicsumUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LoremPicsum;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4D70B541285494F300778C61 /* Build configuration list for PBXProject "LoremPicsum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D70B571285494F500778C61 /* Debug */,
+				4D70B572285494F500778C61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D70B573285494F500778C61 /* Build configuration list for PBXNativeTarget "LoremPicsum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D70B574285494F500778C61 /* Debug */,
+				4D70B575285494F500778C61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D70B576285494F500778C61 /* Build configuration list for PBXNativeTarget "LoremPicsumTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D70B577285494F500778C61 /* Debug */,
+				4D70B578285494F500778C61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D70B579285494F500778C61 /* Build configuration list for PBXNativeTarget "LoremPicsumUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D70B57A285494F500778C61 /* Debug */,
+				4D70B57B285494F500778C61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4D70B552285494F300778C61 /* LoremPicsum.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4D70B553285494F300778C61 /* LoremPicsum.xcdatamodel */,
+			);
+			currentVersion = 4D70B553285494F300778C61 /* LoremPicsum.xcdatamodel */;
+			path = LoremPicsum.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4D70B53E285494F300778C61 /* Project object */;
+}

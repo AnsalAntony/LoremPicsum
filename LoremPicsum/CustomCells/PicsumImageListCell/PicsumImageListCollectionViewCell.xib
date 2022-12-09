@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PicsumImageListCollectionViewCell" id="gTV-IL-0wX" customClass="PicsumImageListCollectionViewCell" customModule="LoremPicsum" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="303" height="252"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="303" height="252"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Q9-IG-d5U">
+                        <rect key="frame" x="0.0" y="0.0" width="303" height="252"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="upT-GK-Vmh">
+                                <rect key="frame" x="-1" y="-1" width="305" height="254"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.87835413220000003" green="0.87848073240000002" blue="0.87832647559999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="upT-GK-Vmh" firstAttribute="top" secondItem="8Q9-IG-d5U" secondAttribute="top" constant="-1" id="Ail-sd-jp3"/>
+                            <constraint firstAttribute="bottom" secondItem="upT-GK-Vmh" secondAttribute="bottom" constant="-1" id="nNB-Qg-NRi"/>
+                            <constraint firstAttribute="trailing" secondItem="upT-GK-Vmh" secondAttribute="trailing" constant="-1" id="o97-cH-F2D"/>
+                            <constraint firstItem="upT-GK-Vmh" firstAttribute="leading" secondItem="8Q9-IG-d5U" secondAttribute="leading" constant="-1" id="rsT-xx-MG2"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="8Q9-IG-d5U" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Hyh-F2-pGi"/>
+                <constraint firstAttribute="bottom" secondItem="8Q9-IG-d5U" secondAttribute="bottom" id="hnc-xm-yRt"/>
+                <constraint firstAttribute="trailing" secondItem="8Q9-IG-d5U" secondAttribute="trailing" id="ku7-Td-rAt"/>
+                <constraint firstItem="8Q9-IG-d5U" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="slY-jy-180"/>
+            </constraints>
+            <size key="customSize" width="303" height="252"/>
+            <connections>
+                <outlet property="showListImage" destination="upT-GK-Vmh" id="kXH-sq-B1i"/>
+            </connections>
+            <point key="canvasLocation" x="45.652173913043484" y="59.598214285714285"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="placeholder" width="960" height="640"/>
+    </resources>
+</document>
